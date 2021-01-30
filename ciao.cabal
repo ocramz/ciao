@@ -22,8 +22,10 @@ library
                        Server
   build-depends:       base >= 4.7 && < 5
                      , bytestring
+                     , directory
                      , optparse-applicative
                      , scotty
+                     , wai-extra
                      , wai-middleware-static
                      , text
                      , warp
