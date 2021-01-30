@@ -36,17 +36,6 @@ executable ciao
   build-depends:       base
                      , ciao
 
--- test-suite spec
---   default-language:    Haskell2010
---   ghc-options:         -Wall
---   type:                exitcode-stdio-1.0
---   hs-source-dirs:      test
---   main-is:             Spec.hs
---   build-depends:       base
---                      , ciao
---                      , hspec
---                      , QuickCheck
-
 source-repository head
   type:     git
   location: https://github.com/ocramz/ciao

@@ -9,8 +9,8 @@ cli = customExecParser p opts
     p = prefs showHelpOnError
     opts = info (cliP <**> helper)
            ( fullDesc
-             <> progDesc "Print a greeting for TARGET"
-             <> header "hello - a test for optparse-applicative" )
+             <> progDesc "Serve the contents of a directory over HTTP"
+             <> header "ciao - a little static webserver" )
 
 data CLIOpts = CLIOpts {
     cliPort :: Int
@@ -43,10 +43,3 @@ dirP = strOption (
                  )
 
 
--- main :: IO ()
--- main = greet =<< execParser opts
---   where
---     opts = info (sample <**> helper)
---       ( fullDesc
---      <> progDesc "Print a greeting for TARGET"
---      <> header "hello - a test for optparse-applicative" )
