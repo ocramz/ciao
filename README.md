@@ -5,7 +5,7 @@ A little static webserver
 
 ## Installation
 
-  $ stack install
+    $ stack install
 
 ## Get started
 
