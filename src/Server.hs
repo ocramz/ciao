@@ -10,7 +10,8 @@ import CLI (cli, CLIOpts(..))
 
 server :: IO ()
 server = do
-  (CLIOpts p dir) <- cli
+  o@(CLIOpts p dir) <- cli
+  print o
   let
     setts = defaultSettings &
             setPort p

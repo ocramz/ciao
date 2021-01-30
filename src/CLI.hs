@@ -15,7 +15,9 @@ cli = customExecParser p opts
 data CLIOpts = CLIOpts {
     cliPort :: Int
   , cliDir :: FilePath
-                       } deriving (Eq, Show)
+                       } deriving (Eq)
+instance Show CLIOpts where
+  show (CLIOpts p d) = unwords ["listening on port :", show p, "\ndirectory :", d]
 
 cliP :: Parser CLIOpts
 cliP = CLIOpts <$> portP <*> dirP
